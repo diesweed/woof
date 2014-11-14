@@ -16,7 +16,7 @@ var out = [];
 var step = .5;
 
 export function dsp(t) {
-  t *= 0.8; // play with me!
+  t *= 0.6; // play with me!
   if ((t*4) % step === 0) ch = 1 - ch;
 
   dry = Math.sin(1401 * t * Math.PI * 2) * Math.exp(240 * (-t/2 % step));
